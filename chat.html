@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Energías Renovables</title>
+    <style>
+        body {
+            background-image: url('/static/imagen_fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 500px;
+        }
+        .messages {
+            background: #222;
+            padding: 10px;
+            border-radius: 5px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+        .input-group {
+            display: flex;
+        }
+        .input-group input {
+            flex: 1;
+            padding: 10px;
+        }
+        .input-group button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Chatbot de Energías Renovables</h1>
+        <p>Interactúa y resuelve tus dudas sobre energía solar.</p>
+        <div class="messages" id="messages"></div>
+        <div class="input-group">
+            <input id="userInput" type="text" placeholder="Escribe tu pregunta...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    <script src="/static/chatbot.js"></script>
+</body>
+<body>
+    <!-- Otros elementos -->
+    <div id="datetime" style="position: absolute; top: 10px; left: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 10px; border-radius: 5px; font-size: 1.2em;">
+        Cargando información de fecha, hora y clima...
+    </div>
+    <!-- Resto del contenido -->
+    <script src="/static/chatbot.js"></script>
+</body>
+
+</html>

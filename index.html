@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Energías Renovables</title>
+    <style>
+        body {
+            background-image: url('/static/imagen_fondo1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #0fef0c;
+            font-family: 'Open Sans', Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+        .title-section {
+            margin: 1.0px auto;
+            padding: 20px;
+            text-shadow: 1px 1px 2px black; /* Delineado negro en el texto */
+        }
+        .content {
+            background-color: rgba(0, 0, 0, 0.15); /* Más claro */
+            padding: 30px;
+            border-radius: 10px;
+            margin: 1.0px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+        h2, p, ul li {
+            text-shadow: 2px 2px 2px black; /* Delineado negro en el texto */
+        }
+        p {
+            font-size: 2.5em;
+        }
+        .banner h2 {
+            font-size: 2.5em;
+            font-weight: 600;
+            color: #2f63f3;
+        }
+        .banner p {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #f0f3fa;
+            font-size: 2.0em;
+            text-shadow: 3px 3px 3px rgb(13, 11, 11);
+            
+        }
+        .banner ul {
+            list-style: none;
+            padding: 0;
+        }
+        .banner ul li {
+            margin-bottom: 5px;
+        }
+        .banner ul li a {
+            color: hsl(120, 45%, 98%); /* Verde para los enlaces */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-shadow: 4px 4px 4px rgb(13, 11, 11);
+        }
+        .banner ul li a:hover {
+            text-decoration: underline;
+        }
+        .button-container {
+            margin-top: 75px; /* Aumenta la separación del botón */
+        }
+        .button {
+            background-color: #2f63f3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 2.0em;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #42ea4b;
+        }
+        .comment {
+            font-size: 2.5em;
+            color: #0fef0c;
+            margin-top: 5px;
+            text-shadow: 2px 2px 3px black; /* Delineado negro en el texto */
+        }
+    </style>
+    <!-- Fuente externa -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Título y descripción principal fuera del banner -->
+    <div class="title-section">
+        <h1>Bienvenido al Portal de Energías Renovables</h1>
+        <p>Descubre todo sobre la energía solar en Colombia.</p>
+    </div>
+
+    <!-- Banner principal con recursos educativos -->
+    <div class="content">
+        <div class="banner">
+            <h2>Recursos educativos</h2>
+            <p>Consulta videos y artículos educativos sobre energías renovables:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=q5bMAz4NK0c" target="_blank">Video: Cómo funciona un panel solar</a></li>
+                <li><a href="https://www.youtube.com/watch?v=HLmz66Bb_oA" target="_blank">Video: Casa 100% energía solar en Colombia</a></li>
+                <li><a href="https://www.youtube.com/watch?v=8rNzo4Ihk1k" target="_blank">Video: Parque solar más grande de Colombia</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7eyYpV11GGk" target="_blank">Video: Futuro de la energía solar en Colombia</a></li>
+                <li><a href="https://autosolar.co" target="_blank">Distribuidores de tecnología solar en Colombia</a></li>
+                <li><a href="https://www.emergente.com.co" target="_blank">Distribuidores de tecnología solar en Colombia</a></li>
+                <li><a href="https://solare.com.co" target="_blank">Distribuidores de tecnología solar en Colombia</a></li>
+                <li><a href="https://www.solarshop.com.co" target="_blank">Distribuidores de tecnología solar en Colombia</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Botón para ir al chatbot -->
+    <div class="button-container">
+        <a href="/chat" class="button">Ir al Chatbot</a>
+        <p class="comment">Interactúa con nuestro asistente virtual para resolver tus dudas.</p>
+    </div>
+</body>
+<body>
+    <!-- Otros elementos -->
+    <div id="datetime" style="position: absolute; top: 10px; left: 10px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 10px; border-radius: 5px; font-size: 1.2em;">
+        Cargando información de fecha, hora y clima...
+    </div>
+    <!-- Resto del contenido -->
+    <script src="/static/chatbot.js"></script>
+</body>
+
+</html>
