@@ -25,6 +25,12 @@ async def get_home():
 async def get_chat():
     with open("chat.html", "r", encoding="utf-8") as file:
         return HTMLResponse(file.read())
+    
+@app.get("/portal", response_class=HTMLResponse)
+async def get_portal():
+    with open("portal.html", "r", encoding="utf-8") as file:
+        return HTMLResponse(file.read())
+
 
 
 # Datos de preguntas y respuestas

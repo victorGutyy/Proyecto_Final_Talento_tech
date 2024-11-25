@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Web - Energías Renovables</title>
+    <style>
+        /* Estilo global para eliminar márgenes y rellenos */
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-image: url('/static/imagen_fondo1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff;
+            font-family: 'Open Sans', Arial, sans-serif;
+            filter: brightness(1.2); /* Aclarar el fondo */
+        }
+
+        /* Barra de navegación */
+        nav {
+            background-color: rgba(8, 243, 23, 0.879); /* Color del fondo */
+            color: rgb(15, 15, 15); /* Color del texto */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* Ajuste del relleno */
+            position: fixed;
+            top: 0; /* Posición al borde superior */
+            left: 0; /* Alineado al borde izquierdo */
+            width: 100%; /* Ocupa todo el ancho */
+            z-index: 1000; /* Coloca la barra sobre otros elementos */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 60px;
+        }
+
+        nav ul li a {
+            color: rgb(12, 12, 12); /* Color del texto */
+            text-decoration: none;
+            font-size: 2.0em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenido principal */
+        .content {
+            margin-top: 80px; /* Espacio para que el contenido no se superponga con la barra */
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            text-align: center;
+            color: #0a0a0a; /* Oscurecer el color del título */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        section h2 {
+            font-size: 2.3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 2px black; /* Borde negro */
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin: 10px 0;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 2px black; /* Borde negro */
+        }
+
+        section P {
+            margin: 10px 0;
+            font-size: 1.5em;
+            text-shadow: 2px 2px 2px black; /* Borde negro */
+        }
+
+        section ul li a {
+            color: #42ea4b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section ul li a:hover {
+            text-decoration: underline;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <div class="logo">Energías Renovables</div>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/chat">Chatbot</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <h1>Portal de Recursos e Información</h1>
+        <p style="text-align: center;">Explora información detallada sobre energías renovables.</p>
+
+        <!-- Sección de información -->
+        <section id="informacion">
+            <h2>Información General</h2>
+            <p>La energía renovable es clave para un futuro sostenible. En esta sección encontrarás datos relevantes:</p>
+            <ul>
+                <li><a href="https://feriaexposolar.com/por-que-invertir-en-energia-solar/" target="_blank">Artículo: ¿Por qué invertir en energía solar?</a></li>
+                <li><a href="https://novaluz.es/energia-limpia-para-empresas/impacto-ambiental-de-los-paneles-fotovoltaicos/" target="_blank">Informe: Impacto ambiental de los paneles solares</a></li>
+                <li><a href="https://vortech.com.co/guia-paso-a-paso-es-la-energia-solar-viable-para-tu-empresa-en-colombia/" target="_blank">Guía: Cómo calcular la viabilidad de un proyecto solar</a></li>
+            </ul>
+        </section>
+
+        <!-- Sección de recursos -->
+        <section id="recursos">
+            <h2>Recursos Educativos</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=q5bMAz4NK0c" target="_blank">Video: Cómo funciona un panel solar</a></li>
+                <li><a href="https://www.youtube.com/watch?v=HLmz66Bb_oA" target="_blank">Video: Casa 100% energía solar en Colombia</a></li>
+                <li><a href="https://www.youtube.com/watch?v=8rNzo4Ihk1k" target="_blank">Video: Parque solar más grande de Colombia</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7eyYpV11GGk" target="_blank">Video: Futuro de la energía solar en Colombia</a></li>
+            </ul>
+        </section>
+        <script src="/static/chatbot.js"></script>
+    </div>
+    <div id="datetime" style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.6); color: white; padding: 10px; border-radius: 5px; font-size: 1.2em;">
+        Cargando información de fecha y hora...
+    </div>
+       
+</body>
+
+
+</html>
