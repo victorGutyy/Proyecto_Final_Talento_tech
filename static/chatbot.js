@@ -44,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     
-
     async function sendMessage() {
         const message = inputField.value.trim();
         if (!message) return;
@@ -139,4 +138,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mensaje de saludo inicial
     displayBotResponse("Hola! Soy el Chatbot de Energías Renovables. ¿Cuál es tu nombre?");
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    function updateDateTime() {
+        const datetimeDiv = document.getElementById("datetime");
+
+        if (!datetimeDiv) {
+            console.error("Elemento #datetime no encontrado en el HTML.");
+            return;
+        }
+
+        // Actualiza la fecha y hora
+        const now = new Date();
+        const date = now.toLocaleDateString();
+        const time = now.toLocaleTimeString();
+
+        // Datos simulados de temperatura
+        const temperature = 25; // Temperatura simulada en °C
+        const feelsLike = 27; // Sensación térmica simulada en °C
+
+        datetimeDiv.innerHTML = `
+            Fecha: ${date} - Hora: ${time} <br> 
+            Temp: ${temperature}°C | Sensación térmica: ${feelsLike}°C
+        `;
+    }
+
+    // Actualiza los datos cada minuto
+    setInterval(updateDateTime, 60000); // Actualiza cada minuto
+    updateDateTime(); // Llama una vez al cargar
 });

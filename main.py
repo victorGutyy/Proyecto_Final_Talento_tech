@@ -76,7 +76,11 @@ async def chat(request: UserQuery):
         return {"response": "Por favor, proporciona tu nombre primero."}
     category = find_best_match(request.question.lower())
     response = responses.get(category, "Lo siento, no entiendo la pregunta. ¿Puedes reformularla?")
+
     return {"response": response}
+
+
+    #return {"response": response} 
 
 solar_production_by_department = {
     "amazonas": 160,
