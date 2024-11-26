@@ -3,7 +3,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Optional
-import re
+import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -97,6 +97,17 @@ responses = {
     "Durabilidad": "La calidad de los materiales y el mantenimiento adecuado aseguran la durabilidad.",
     "Microinversores": "Los microinversores convierten la energía directamente en cada panel, aumentando la eficiencia."
 }
+
+# Cargar el modelo de procesamiento de lenguaje natural
+nlp = spacy.load("es_core_news_sm")
+
+# Preprocesar texto (lemmatización y normalización)
+def preprocess_text(text):
+    doc = nlp(text.lower())
+    return " ".join([token.lemma_ for token in doc if not token.is_stop and not token.is_punct])
+
+# Preprocesar frases del dataset
+processed_data = [preprocess_text(item["phrase"]) for item in data]
 
 
 # Entrenar el modelo para encontrar respuestas basadas en similitud
