@@ -30,19 +30,30 @@ async def get_chat():
 # Datos de preguntas y respuestas
 data = [
     {"category": "Viabilidad por región", "phrase": "¿Qué zonas del país son más efectivas para instalar paneles solares?"},
+    {"category": "Viabilidad por región", "phrase": "¿Cómo influye la altitud en la instalación de paneles solares?"},
     {"category": "Época de productividad", "phrase": "¿Cuándo son más productivos los paneles solares?"},
+    {"category": "Época de productividad", "phrase": "¿Cómo afecta la nubosidad a la productividad de los paneles solares?"},
     {"category": "Incentivos", "phrase": "¿Qué incentivos hay para paneles solares?"},
+    {"category": "Incentivos", "phrase": "¿Existen subsidios para pequeños agricultores que instalen paneles solares?"},
     {"category": "Sector agrícola", "phrase": "¿Es útil la energía solar para una finca hotel?"},
     {"category": "Sector agrícola", "phrase": "¿Cómo puede ayudar la energía solar en galpones?"},
-    {"category": "Sector agrícola", "phrase": "¿Es rentable usar paneles solares en fincas lecheras?"}
+    {"category": "Sector agrícola", "phrase": "¿Es rentable usar paneles solares en fincas lecheras?"},
+    {"category": "Sector comercial", "phrase": "¿Cómo benefician los paneles solares a los centros comerciales?"},
+    {"category": "Sector comercial", "phrase": "¿Se pueden usar paneles solares en pequeñas empresas?"},
+    {"category": "Tipos de paneles", "phrase": "¿Qué tipos de paneles solares existen?"},
+    {"category": "Tipos de paneles", "phrase": "¿Qué diferencia hay entre paneles monocristalinos y policristalinos?"},
+    {"category": "Tipos de paneles", "phrase": "¿Qué son los paneles solares bifaciales?"}
 ]
 
 responses = {
-    "Viabilidad por región": "Las zonas con mayor irradiación solar, como La Guajira, son ideales para paneles solares.",
-    "Época de productividad": "Los meses con menos lluvias y más sol son los más productivos para los paneles solares.",
-    "Incentivos": "Existen incentivos fiscales en Colombia para fomentar la instalación de paneles solares.",
-    "Sector agrícola": "La energía solar es altamente útil en el sector agrícola para riego, iluminación y otros usos."
+    "Viabilidad por región": "Las zonas con mayor irradiación solar, como La Guajira, son ideales para paneles solares. La altitud también influye, ya que a mayor altitud suele haber menos nubosidad, favoreciendo la generación solar.",
+    "Época de productividad": "Los meses con menos lluvias y más sol son los más productivos para los paneles solares. Sin embargo, incluso en días nublados, los paneles generan algo de energía.",
+    "Incentivos": "Existen incentivos fiscales en Colombia para fomentar la instalación de paneles solares. Además, hay programas específicos para agricultores y pequeñas empresas.",
+    "Sector agrícola": "La energía solar es altamente útil en el sector agrícola para riego, iluminación y otros usos. En galpones, puede reducir costos de ventilación y climatización, mientras que en fincas lecheras ayuda a disminuir gastos de refrigeración.",
+    "Sector comercial": "Los paneles solares benefician a los centros comerciales al reducir costos de electricidad y mejorar su reputación ambiental. También son una solución rentable para pequeñas empresas que desean ahorrar en energía.",
+    "Tipos de paneles": "Existen diferentes tipos de paneles solares, como los monocristalinos, policristalinos y bifaciales. Los monocristalinos son más eficientes, los policristalinos son más económicos, y los bifaciales generan energía por ambos lados, aumentando su capacidad total."
 }
+
 
 # Entrenar el modelo para encontrar respuestas basadas en similitud
 vectorizer = TfidfVectorizer().fit([item["phrase"] for item in data])
