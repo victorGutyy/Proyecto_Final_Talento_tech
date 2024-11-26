@@ -40,15 +40,64 @@ data = [
     {"category": "Incentivos", "phrase": "¿Qué incentivos hay para paneles solares?"},
     {"category": "Sector agrícola", "phrase": "¿Es útil la energía solar para una finca hotel?"},
     {"category": "Sector agrícola", "phrase": "¿Cómo puede ayudar la energía solar en galpones?"},
-    {"category": "Sector agrícola", "phrase": "¿Es rentable usar paneles solares en fincas lecheras?"}
+    {"category": "Sector agrícola", "phrase": "¿Es rentable usar paneles solares en fincas lecheras?"},
+    {"category": "Impacto ambiental", "phrase": "¿Qué beneficios ambientales ofrecen los paneles solares?"},
+    {"category": "Vida útil", "phrase": "¿Cuánto tiempo duran los paneles solares?"},
+    {"category": "Mantenimiento", "phrase": "¿Qué tipo de mantenimiento requieren los paneles solares?"},
+    {"category": "Autonomía energética", "phrase": "¿Es posible ser completamente independiente con energía solar?"},
+    {"category": "Energías renovables", "phrase": "¿Qué otras energías renovables existen además de la solar?"},
+    {"category": "Almacenamiento", "phrase": "¿Qué tipo de baterías se usan para almacenar energía solar?"},
+    {"category": "Rentabilidad", "phrase": "¿En cuánto tiempo se recupera la inversión en paneles solares?"},
+    {"category": "Instalación", "phrase": "¿Es complicada la instalación de paneles solares?"},
+    {"category": "Normatividad", "phrase": "¿Qué normativas existen en Colombia sobre energía solar?"},
+    {"category": "Costo inicial", "phrase": "¿Cuál es el costo inicial promedio de un sistema de paneles solares?"},
+    {"category": "Potencia requerida", "phrase": "¿Cómo se calcula la potencia necesaria para un hogar?"},
+    {"category": "Clima y producción", "phrase": "¿Cómo afecta el clima la producción de energía solar?"},
+    {"category": "Futuro", "phrase": "¿Cuál es el futuro de la energía solar en Colombia?"},
+    {"category": "Empresas", "phrase": "¿Cómo pueden las empresas beneficiarse de la energía solar?"},
+    {"category": "Ahorro", "phrase": "¿Cuánto se puede ahorrar al instalar paneles solares?"},
+    {"category": "Innovación", "phrase": "¿Qué innovaciones existen actualmente en energía solar?"},
+    {"category": "Desventajas", "phrase": "¿Cuáles son las desventajas de la energía solar?"},
+    {"category": "Educación", "phrase": "¿Qué programas educativos promueven la energía solar?"},
+    {"category": "Impacto en la factura", "phrase": "¿Cómo afecta la energía solar la factura eléctrica?"},
+    {"category": "Residuos", "phrase": "¿Qué se hace con los paneles solares al final de su vida útil?"},
+    {"category": "Zonas rurales", "phrase": "¿Cómo puede la energía solar beneficiar a zonas rurales?"},
+    {"category": "Energía híbrida", "phrase": "¿Qué es un sistema híbrido de energía solar?"},
+    {"category": "Durabilidad", "phrase": "¿Cómo se asegura la durabilidad de los paneles solares?"},
+    {"category": "Microinversores", "phrase": "¿Qué son los microinversores en un sistema solar?"}
 ]
 
 responses = {
     "Viabilidad por región": "Las zonas con mayor irradiación solar, como La Guajira, son ideales para paneles solares.",
     "Época de productividad": "Los meses con menos lluvias y más sol son los más productivos para los paneles solares.",
     "Incentivos": "Existen incentivos fiscales en Colombia para fomentar la instalación de paneles solares.",
-    "Sector agrícola": "La energía solar es altamente útil en el sector agrícola para riego, iluminación y otros usos."
+    "Sector agrícola": "La energía solar es altamente útil en el sector agrícola para riego, iluminación y otros usos.",
+    "Impacto ambiental": "Los paneles solares reducen la dependencia de combustibles fósiles, disminuyendo las emisiones de CO2.",
+    "Vida útil": "La vida útil promedio de un panel solar es de 25 a 30 años.",
+    "Mantenimiento": "El mantenimiento consiste principalmente en limpieza y revisiones anuales.",
+    "Autonomía energética": "Es posible alcanzar la independencia energética combinando paneles solares y baterías.",
+    "Energías renovables": "Además de la solar, existen energías eólica, geotérmica, hidráulica y biomasa.",
+    "Almacenamiento": "Las baterías de litio son las más utilizadas por su eficiencia y durabilidad.",
+    "Rentabilidad": "La inversión se recupera en promedio en 5 a 10 años dependiendo del consumo.",
+    "Instalación": "La instalación requiere de profesionales certificados para garantizar un sistema seguro.",
+    "Normatividad": "En Colombia, la Ley 1715 de 2014 regula el uso de energías renovables.",
+    "Costo inicial": "El costo inicial varía según el tamaño del sistema, desde COP 10 millones en adelante.",
+    "Potencia requerida": "Se calcula según el consumo energético promedio del hogar en kWh.",
+    "Clima y producción": "Los días nublados reducen la producción, pero los sistemas siguen generando energía.",
+    "Futuro": "La energía solar está en constante crecimiento gracias a los avances tecnológicos y mayor accesibilidad.",
+    "Empresas": "Las empresas pueden reducir costos operativos y mejorar su imagen ambiental usando energía solar.",
+    "Ahorro": "El ahorro depende del consumo y el costo de la energía, pero puede llegar al 50% o más.",
+    "Innovación": "Los paneles solares bifaciales y los sistemas flotantes son algunas innovaciones recientes.",
+    "Desventajas": "Las principales desventajas son el costo inicial alto y la dependencia de la luz solar.",
+    "Educación": "Programas como el SENA promueven el aprendizaje en energías renovables.",
+    "Impacto en la factura": "La energía solar puede reducir la factura eléctrica a cero en algunos casos.",
+    "Residuos": "Los paneles solares son reciclables en un 80%, reduciendo el impacto ambiental.",
+    "Zonas rurales": "En zonas rurales, los paneles solares pueden proveer energía en áreas sin conexión a la red.",
+    "Energía híbrida": "Un sistema híbrido combina energía solar con otras fuentes, como la red eléctrica.",
+    "Durabilidad": "La calidad de los materiales y el mantenimiento adecuado aseguran la durabilidad.",
+    "Microinversores": "Los microinversores convierten la energía directamente en cada panel, aumentando la eficiencia."
 }
+
 
 # Entrenar el modelo para encontrar respuestas basadas en similitud
 vectorizer = TfidfVectorizer().fit([item["phrase"] for item in data])
